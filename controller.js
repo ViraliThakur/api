@@ -6,7 +6,7 @@ exports.register = async (req, res) => {
     try {
         const { name, email, age } = req.body;
 
-        // Validate required fields
+        // Validate 
         if (!name || !email || !age) {
             return res.status(400).json({ message: 'Name, email, and age are required' });
         }
